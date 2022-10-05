@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/static/css/style.css">
-    <!-- <script src="/node_modules/socket.io-client/dist/socket.io.js"></script> -->
     <title>Chat System</title>
 </head>
 <body>
-    <!-- onsubmit="sendMsg(this)" -->
     <form id="form-id" class="msg-area" >
         <input name="message" id="msg" placeholder="Message" required>
         <button type="submit" id="send">Send</button>
@@ -19,6 +17,7 @@
     <ul id="text-msgs">
     </ul>
 
+    <!-- Install socket.io-client using npm -->
     <script src="/socket.io/socket.io.js"></script>
     <script src="/static/js/main.js"></script>
 </body>
