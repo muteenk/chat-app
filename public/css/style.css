@@ -3,3 +3,102 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+
+.msg-area{
+
+    background: white;
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.msg-area #msg{
+    resize: none;
+    height: 3em;
+    width: 50%;
+    padding: 2px 10px;
+}
+
+.msg-area #send{
+	border: none;
+	background: blue;
+	color: white;
+	padding: 12px 20px;
+	cursor: pointer;
+}
+
+
+
+
+@media (max-width: 620px) {
+    .msg-area #msg{
+        width: 80%;
+    }
+}
+
+
+
+
+#text-msgs{
+    width: 100%;
+    margin-bottom: 4em;
+    overflow-y: scroll;
+}
+
+#text-msgs .my-msg, #text-msgs .others-msg{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+#text-msgs .my-msg{
+    justify-content: flex-end;
+}
+
+#text-msgs .others-msg{
+    justify-content: flex-start;
+}
+
+#text-msgs .my-msg span, #text-msgs .others-msg span{
+    padding: 10px 15px;
+    color: white;
+    border-radius: 10px;
+    max-width: 30%;
+}
+
+#text-msgs .my-msg span{
+    background: blue;
+    
+}
+
+#text-msgs .others-msg span{
+    background: rgb(43, 43, 43);
+}
+
+
+
+
+@media (max-width: 1000px) {
+    #text-msgs .my-msg span, #text-msgs .others-msg span{
+        max-width: 50%;
+    }
+}
+
+
+@media (max-width: 620px) {
+    #text-msgs .my-msg span, #text-msgs .others-msg span{
+        max-width: 70%;
+    }
+}
+
+
