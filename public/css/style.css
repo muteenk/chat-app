@@ -74,6 +74,7 @@
     color: white;
     border-radius: 10px;
     max-width: 30%;
+    word-wrap: break-word;
 }
 
 #text-msgs .my-msg span{
